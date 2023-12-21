@@ -1,0 +1,48 @@
+#root {
+  max-width: 450px;
+  margin: 0;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+@font-face {
+  font-family: "lufga";
+  src: url("./fonts/LufgaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* transition for button at map page - (onGoing and upComing) */
+
+.button-transition-maps {
+  transition: background-color 0.3s ease-in, color 0.3s ease-in-out;
+}
+
+/* gradient for Event card in Map page. */
+.maps-card-border-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(to bottom, #181818, #090909),
+    linear-gradient(to left, #6c4fc3, #424046);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+
+.taps{
+  animation: tap 2s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes tap {
+  0%{
+    transform: translate3D(0px, 0px, 0px);
+  }
+  50%{
+    transform: translate3D(0px, 3px, 0px);
+    
+  }
+  100%{
+    transform: translate3D(0px, 0px, 0px);
+  }
+}
